@@ -1,10 +1,10 @@
 [
   {
     "Name": "ABC DEF",
-    "Phone Number": "919-392-3030"
+    "Phone": "919-392-3030"
   },
   {
     "Name": "GHI JKL",
-    "Phone Number": "293-334-2222"
+    "Phone": "293-334-2222"
   }
 ]
