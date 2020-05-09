@@ -2,7 +2,7 @@
 Resources and templates made for Chinese Antibody Society 
 
 
-# Collection of Revised Templates (2020)
+# Collection of Scripts and Templates (2020)
 
 ## HTML, Javscript, CSS
 
