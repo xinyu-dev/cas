@@ -1,5 +1,5 @@
 # Chinese Antibody Society
-Hosting Resources for CAS
+Resources and templates made for Chinese Antibody Society 
 
 
 # Collection of Revised Templates (2020)
