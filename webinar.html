@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <!-- We support more than 40 localizations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/js/i18n/grid.locale-en.min.js"></script>
+
+
+    <!-- This is the Javascript file of jqGrid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/js/jquery.jqGrid.min.js"></script>
+    <!-- A link to a Boostrap  and jqGrid Bootstrap CSS siles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/css/ui.jqgrid-bootstrap.min.css" />
+    <script>
+        $.jgrid.defaults.responsive = true;
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8" />
+    <title>CAS Webinar</title>
+</head>
+
+<body>
+<div id="main" align="center">
+    <img src="../pics/Webinar%20Collection%20Banner.png" style="padding-bottom: 40px", width="1650">
+    <h4 align="center">Search database below</h4>
+    <table id="grid"></table>
+    <div id="jqGridPager"></div>
+
+</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+
+    $("#grid").jqGrid({
+        mtype: 'GET',
+        datatype: 'json',
+        url: "https://xinyu-dev.github.io/cas/webinar.json",
+        colNames:['Date', 'Topic', 'Speaker', 'Linker'],
+        colModel:[
+            {name:'Date',index:'Date', width:40},
+            {name:'Topic',index:'Topic', cellattr: function (rowId, tv, rawObject, cm, rdata) { return 'style="white-space: normal;"' }},
+            {name:'Speaker',index:'Speaker', width:40},
+            {name:'Linker',index:'Linker', width:30},
+        ],
+
+        caption : '',
+        height: 'auto',
+        rowNum: 5,
+        loadonce: true,  //must be true!
+        viewrecords: true,
+        width: 1600,
+        pager: "#jqGridPager"
+    });
+
+    $("#grid").jqGrid('filterToolbar', { stringResult : false, defaultSearch:"cn"});  //must set defaultSearch to cn, so any hit that "contains" the query will be returned
+    $('#grid').navGrid("#jqGridPager", {
+            search: true, // show search button on the toolbar
+            add: false,
+            edit: false,
+            del: false,
+            refresh: true
+        },
+
+        {},   //edit options, must keep
+
+        {},  //add options, must keep
+
+        {},  //delete dialog box, must keep
+
+        {
+            // search diaglog box
+            beforeShowSearch: function($form) {
+                $('#searchmodfbox_grid').width(800);
+                $('#searchmodfbox_grid').height(200);
+                return true;
+            },
+            multipleSearch: true,
+        }
+    );
+
+</script>
+
+
+</html>
