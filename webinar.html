@@ -9,22 +9,25 @@
     <!-- We support more than 40 localizations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/js/i18n/grid.locale-en.min.js"></script>
 
-
     <!-- This is the Javascript file of jqGrid -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/js/jquery.jqGrid.min.js"></script>
+
     <!-- A link to a Boostrap  and jqGrid Bootstrap CSS siles-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/jqgrid/5.4.0/css/ui.jqgrid-bootstrap.min.css" />
+
     <script>
         $.jgrid.defaults.responsive = true;
         $.jgrid.defaults.styleUI = 'Bootstrap';
     </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <meta charset="utf-8" />
     <title>CAS Webinar</title>
 </head>
 
+<!-- responsive style for header image -->
 <style>
     #headerBanner img {
         width: 100%;
@@ -35,14 +38,14 @@
 <body>
 <div id="main" align="center" style="padding-bottom: 100px">
     <div id="headerBanner"><img src="https://github.com/xinyu-dev/cas/blob/master/logos/Webinar%20Collection%20Banner.png?raw=true" style="padding-bottom: 40px" width="100%" height="auto"></div>
+
     <h4 align="center">Search previous webinars below</h4>
+
     <div id="gridBulk" class="jqGrid">
         <table id="grid"></table>
         <div id="jqGridPager"></div>
     </div>
-
 </div>
-
 
 </body>
 
@@ -61,14 +64,14 @@
             {name:'Linker',index:'Linker'},
         ],
 
-        caption : '',
-        //height: 'auto',
-        rowNum: 5,
-        loadonce: true,  //must be true!
+        caption : '',       //no caption needed
+        rowNum: 5,          //5 row per page
+        loadonce: true,     //must be true!
         viewrecords: true,
-        //width: 1600,
-        autowidth: true,
-        shrinkToFit: true,
+        height: 'auto',     //must set to auto so you can display rows without scrolling
+        //width: 1600,      //best settings for computer screen
+        autowidth: true,    //responsive table design
+        shrinkToFit: true,  //responsive table design
         pager: "#jqGridPager"
     });
 
@@ -97,6 +100,7 @@
             multipleSearch: true,
         }
     );
+
 
 </script>
 
