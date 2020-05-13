@@ -10,4 +10,4 @@ Resources and templates made for Chinese Antibody Society
 
 2. [CAS Program Book, embedded in Adobe InDesign](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
-3. [Interactive Webinar Database](https://xinyu-dev.github.io/cas/webinar.html)
+3. [Interactive Webinar Database](https://xinyu-dev.github.io/cas/webinar_v2.html)
