@@ -1,5 +1,5 @@
 # Chinese Antibody Society
-Resources and templates made for Chinese Antibody Society 
+Resources and templates I made for Chinese Antibody Society 
 
 
 # Collection of Scripts and Templates (2020)
