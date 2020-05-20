@@ -1,7 +1,8 @@
-{"data":[
+{"data":
+[
   {
     "Webinar Title": "Fundamentals of therapeutic antibody discovery",
-    "Date": "6/24/17",
+    "Date": "2017-06-24",
     "Topics": "Discovery and Engineering",
     "Speaker": "Dr. Zhijian Lu",
     "Speaker Title": "Biologics Discovery Lead",
@@ -11,7 +12,7 @@
   },
   {
     "Webinar Title": "Cell Line and Upstream Process Development for the Manufacture of Monoclonal Antibodies",
-    "Date": "7/15/17",
+    "Date": "2017-07-15",
     "Topics": "Upstream",
     "Speaker": "Dr. Zhong Liu",
     "Speaker Title": "Upstream PD Lead",
@@ -21,7 +22,7 @@
   },
   {
     "Webinar Title": "Regulatory and Quality Considerations for the US filing of Monoclonal Antibody and Related Products",
-    "Date": "8/5/17",
+    "Date": "2017-08-05",
     "Topics": "Regulatory",
     "Speaker": "Dr. Audrey Jia",
     "Speaker Title": "COO",
@@ -31,7 +32,7 @@
   },
   {
     "Webinar Title": "Patenting Therapeutic Antibodies: Basics and Beyond",
-    "Date": "9/2/17",
+    "Date": "2017-09-02",
     "Topics": "Patent",
     "Speaker": "Dr. Lin Sun-Hoffman",
     "Speaker Title": "Founding Partner",
@@ -41,7 +42,7 @@
   },
   {
     "Webinar Title": "Design and conduct of clinical trials – a primer",
-    "Date": "9/23/17",
+    "Date": "2017-09-23",
     "Topics": "Clinical Trials",
     "Speaker": "Dr. Yong-Jiang Hei",
     "Speaker Title": "CMO",
@@ -51,7 +52,7 @@
   },
   {
     "Webinar Title": "How to raise money from Venture Capitalists",
-    "Date": "10/21/17",
+    "Date": "2017-10-21",
     "Topics": " Entrepreneurship",
     "Speaker": "Dr. Jonathan Wang",
     "Speaker Title": "Senior Managing Director",
@@ -61,7 +62,7 @@
   },
   {
     "Webinar Title": "Optimization of Therapeutic Antibody Sequence – The Art of Balance",
-    "Date": "11/18/17",
+    "Date": "2017-11-18",
     "Topics": "Discovery and Engineering",
     "Speaker": "Dr. Yue Liu",
     "Speaker Title": "CEO",
