@@ -3,7 +3,7 @@ Resources and templates I made for Chinese Antibody Society (CAS)
 
 # AWS S3 Hosted Playground 
 
-[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of the society's [currect website](https://chineseantibody.org/)
+[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/)
 
 # Collection of Scripts and Templates (2020)
 
