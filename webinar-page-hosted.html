@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Webinar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAS Webinar Template">
+
+
+    <!-- Begin loading animation -->
+    <!-- LOCAL PATH: <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />-->
+    <link href="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589931535/assets/css/loader-pulse_j6txfs.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- End loading animation -->
+
+    <!-- Page Style -->
+    <!--LOCAL PATH: <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />-->
+    <link href="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589931677/assets/css/theme_dlvd2d.css" rel="stylesheet" type="text/css" media="all" />
+
+   <!-- Font Style - Montserrat----------------------------------------------------------------------------------------
+    To change fonts:
+    1. Go to Google Fonts and select the styles you need. Replace the link below.
+    2. In: Pages > Assets > CSS> theme.css, replace all occurences of "Montserrat" with new font
+   -------------------------------------------------------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Scripts for past webinar table -->
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+    <!-- Stylesheet for past webinar table -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+  </head>
+
+  <style>
+
+    /* Plus icon in past webinar table*/
+    td.details-control {
+      background: url('https://res.cloudinary.com/dwawcx2hl/image/upload/v1589931834/assets/icons/plus_edmc30.svg') no-repeat center center;
+      cursor: pointer;
+    }
+
+    /* Minus icon in past webinar table*/
+    tr.shown td.details-control {
+      background: url('https://res.cloudinary.com/dwawcx2hl/image/upload/v1589931834/assets/icons/minus_wkj43a.svg') no-repeat center center;
+    }
+
+    /* Past Webinar Filter Box Style*/
+    #webinar_filter input {
+      border-width: thin;
+      border-style: solid;
+      border-color: lightgrey;
+      border-radius: 1px;
+    }
+
+  </style>
+
+  <body>
+    <div class="loader">
+      <div class="loading-animation"></div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------
+                                                      Top Navigation
+    ------------------------------------------------------------------------------------------------------------------->
+    <div class="navbar-container">
+
+      <!---Navigation Bar Position -->
+      <nav class="navbar navbar-expand-lg navbar-light" data-sticky="top">
+        <div class="container">
+          <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-lg-end" id="navigation-menu">
+            <ul class="navbar-nav my-3 my-lg-0">
+
+              <!-- 1: HOME:  No dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <!--Link for homepage : index.html--->
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-item" href="https://chineseantibody.org/" role="button">Home</a>
+                </div>
+              </li>
+
+              <!-- 2: ABOUT US: Simple dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">About</a>
+                  <div class="row dropdown-menu">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <!-- Link to child pages under ABOUT US -->
+                        <a href="https://chineseantibody.org/mission/" class="dropdown-item fade-page">Mission</a>
+                        <a href="https://chineseantibody.org/board-of-directors/" class="dropdown-item fade-page">Board of Directors</a>
+                        <a href="https://chineseantibody.org/advisors/" class="dropdown-item fade-page">Advisors</a>
+                        <a href="https://chineseantibody.org/operation-team/" class="dropdown-item fade-page">Operation Teams</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 3: EVENTS: Layered Dropdown -->
+              <li class="nav-item">
+                <div class="dropdown">
+
+                  <!--- Change primary menu name --->
+                  <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Events</a>
+                  <div class="row dropdown-menu">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+
+                        <!---1st Child Page with submenu -->
+                        <div class="dropdown">
+
+                          <!---Name of the Child Page -->
+                          <a aria-expanded="false" aria-haspopup="true" class="dropdown-item" data-toggle="dropdown-grid" href="#" role="button">COVID Special Webinars</a>
+                          <div class="row dropdown-menu">
+                            <div class="col-auto" data-dropdown-content>
+
+                              <!-- submenu of the Child Page -->
+                              <div class="dropdown-grid-menu">
+                                <a href="https://chineseantibody.org/webinar_human-neutralizing-anbodies-to-sars-cov-2-the-path-towards-clinical-interventions/" class="dropdown-item fade-page">Neutralizing Abs</a>
+                                <a href="https://chineseantibody.org/webinar_structure-function-and-antigenicity-of-coronavirus-s-proteins/" class="dropdown-item fade-page">S Protein</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!---2nd child page : NO submenu -->
+                        <div class="dropdown">
+                          <!-- Link to child pages under ABOUT US -->
+                          <a href="https://chineseantibody.org/experts-perspectives/" class="dropdown-item fade-page">Experts' Perspectives</a>
+                        </div>
+
+                        <!---3rd Child Page with submenu -->
+                        <div class="dropdown">
+
+                          <!---Name of the Child Page -->
+                          <a aria-expanded="false" aria-haspopup="true" class="dropdown-item" data-toggle="dropdown-grid" href="#" role="button">Partner Conferences</a>
+                          <div class="row dropdown-menu">
+                            <div class="col-auto" data-dropdown-content>
+
+                              <!-- submenu of the Child Page -->
+                              <div class="dropdown-grid-menu">
+                                <a href="https://chineseantibody.org/antibody-engineering-therapeutics-asia/" class="dropdown-item fade-page">AET Asia 2020</a>
+                                <a href="https://chineseantibody.org/bapc-pegs-europe-pep-talk-pegs/" class="dropdown-item fade-page">PEGS Boston, PEGS Europe, PepTalk</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 4: Membership:  No dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <!--Link for membership page--->
+                  <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-item" href="https://chineseantibody.org/membership-register/" role="button">Membership</a>
+                </div>
+              </li>
+
+              <!-- 5: News: Simple dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">News</a>
+                  <div class="row dropdown-menu">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <!-- Link to child pages -->
+                        <a href="https://chineseantibody.org/antibodytherapeutics/" class="dropdown-item fade-page">Antibody Therapeutics Call For COVID-19 Papers</a>
+                        <a href="https://chineseantibody.org/one-thousand-members/" class="dropdown-item fade-page">One Thousand Members Milestone</a>
+                        <a href="https://chineseantibody.org/collaboration-with-antibody-engineering-therapeutics-conference/" class="dropdown-item fade-page">Collaboration with AET</a>
+                        <a href="https://chineseantibody.org/cas-and-chi-announce-strategic-partnership/" class="dropdown-item fade-page">Partnership with Cambridge Healthtech</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 6: Sponsors & Partners:  Simple Drop down-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Sponsors & Partners</a>
+                  <div class="row dropdown-menu">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <!-- Link to child pages -->
+                        <a href="https://chineseantibody.org/sponsor/" class="dropdown-item fade-page">Sponsors</a>
+                        <a href="https://chineseantibody.org/partners/" class="dropdown-item fade-page">Partners</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 7: Job & Volunteers:  Simple dropdown-->
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid" href="#" role="button">Jobs & Volunteers</a>
+                  <div class="row dropdown-menu">
+                    <div class="col-auto" data-dropdown-content>
+                      <div class="dropdown-grid-menu">
+                        <!-- Link to child pages -->
+                        <a href="https://chineseantibody.org/ad/" class="dropdown-item fade-page">Find a Job</a>
+                        <a href="https://chineseantibody.org/become-a-volunteer/" class="dropdown-item fade-page">Become a Volunteer</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <div class="d-flex align-items-center order-lg-3"> <a href="#" class="btn btn-primary ml-lg-4 mr-3 mr-md-4 mr-lg-0 d-none d-sm-block order-lg-3">Login</a>
+
+                <button
+                        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                        data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                  <img alt="Navbar Toggler Open Icon" class="navbar-toggler-open icon icon-sm"
+                       data-inject-svg src="assets/img/icons/interface/icon-menu.svg">
+                  <img alt="Navbar Toggler Close Icon" class="navbar-toggler-close icon icon-sm"
+                       data-inject-svg src="assets/img/icons/interface/icon-x.svg">
+                </button>
+
+
+
+                <!--              &lt;!&ndash; 8: Login  No dropdown&ndash;&gt;-->
+<!--              <li class="nav-item">-->
+<!--                <div class="dropdown">-->
+<!--                  &lt;!&ndash;Link for login page-&ndash;&gt;-->
+<!--                  <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-item" href="https://chineseantibody.org/cas-login/" role="button">MyCAS Login</a>-->
+<!--                </div>-->
+<!--              </li>-->
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                        PAGE HEADER
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="pb-0 o-hidden">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left flex-lg-row-reverse">
+
+          <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-lg-0 pr-lg-5 pr-xl-0">
+            <!-- Animated header -->
+            <div data-aos="fade-in" data-aos-delay="250">
+              <!-- Animated header phrase -->
+              <h1 class="display-3">Webinar Series: Antibody Therapeutics - <mark data-aos="highlight-text" data-aos-delay="500">Bench to Market</mark></h1>
+
+              <!-- Catchphrase beneath the header -->
+              <p class="lead">Monthly webinar series on: science & technology innovations, IP, regulatory, clincial trials, CMC, investment, entrepreneurship</p>
+
+            </div>
+          </div>
+
+          <!-- Picture on the left 2000px by 2000px, in SGV format, stored in CMS -->
+          <div class="col-md-9 col-lg-6" data-aos="fade-left">
+            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589862280/assets/illustrations/webinar_vqa8jb.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                      CURVE DIVIDE AFTER HEADER
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="pb-0 pt-5">
+      <div class="divider divider-bottom bg-primary-3 mt-5"></div>
+    </section>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                           WEBINAR TITLE
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="bg-primary-3 text-white">
+      <div class="container">
+        <div class="row section-title justify-content-center text-center">
+          <div class="col-md-9 col-lg-8 col-xl-7">
+            <!-- Webinar Title-->
+            <h2 class="display-4">Structure, Function, and Antigenicity of Cornonavirus S Proteins</h2>
+            <h3>冠状病毒S蛋白的结构，功能和抗原性</h3>
+            <div class="lead">
+              Sat, March 7, 2020 @ 9-10 pm, EST <br>
+              Sun, March 8, 2020 @ 10-11 am, Beijing Time
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            SYNOPSIS
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="o-hidden">
+      <div class="container">
+        <div class="row align-items-center justify-content-around text-center text-lg-left">
+          <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+            <!--Synopsis-->
+            <div>
+              <h3 class="h1">Synopsis</h3>
+              <p class="lead">新冠S蛋白是疫苗和治疗性抗体研发的关键靶点。 本次讲座，王年爽博士将探讨基于S蛋白的临床药物研究开发的可行性</p>
+            </div>
+          </div>
+
+          <!--Synopsis Photo-->
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589865072/assets/illustrations/Synopsis_su2xyi.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            ABSTRACT
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="o-hidden pt-0">
+      <div class="container">
+        <div class="row align-items-center justify-content-around text-center text-lg-left">
+          <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
+
+            <!--Abstract-->
+            <div>
+              <h2 class="h1">Abstract</h2>
+              <p class="lead">新型冠状病毒2019-nCoV（最新命名为 SARS-CoV-2）的S蛋白位于病毒表面，能够识别并结合宿主细胞表面的受体，然后通过S蛋白的结构变化完成病毒外膜和细胞膜的膜融合，从而完成侵染。因此S蛋白是疫苗和治疗性抗体研发的关键靶点。最近顶尖学术期刊Science杂志正式发表了题为Cryo-EM Structure of the 2019-nCoV Spike in the Prefusion Conformation的文章。德克萨斯大学奥斯汀分校的研究组利用冷冻电镜技术，揭示了新型冠状病毒2019-nCoV 三聚化的S蛋白的高清结构。这些信息为下一步疫苗设计以及抗病毒药物的发现打下了重要的结构生物学基础。本次讲座，王年爽博士将综合之前针对S蛋白的各类结构生物学和功能研究，探讨在新型冠状病毒S蛋白结构研究的基础上，进行各类转化医学研究和临床开发的可行性。</p>
+            </div>
+          </div>
+
+          <!--Abstract Photo-->
+          <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+            <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589866631/assets/illustrations/abstract_phupai.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            SPEAKER
+    ------------------------------------------------------------------------------------------------------------------>
+    <section class="o-hidden pt-0">
+      <div class="container">
+        <div class="row align-items-center justify-content-around text-center text-lg-left">
+          <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+            <!--Speaker-->
+            <div>
+              <h3 class="h1">Speaker</h3>
+              <p class="lead">王年爽博士现为德克萨斯大学奥斯汀分校 Jason McLellan实验室博士后。博士期间师从清华大学结构生物学王新泉教授。在冠状病毒结构、抗体和疫苗设计方面有七年研究经验。王博士的主要学术成果包括：解析了MERS-CoV S蛋白的受体结合结构域 (receptor binding domain, RBD) 与受体DPP4复合物结构，并且与张林琦教授实验室合作筛选了第一个靶向MERS-CoV RBD的人源中和抗体；王博士还设计了一种通用的通过引入脯氨酸突变稳定S蛋白的方法，使全长S蛋白疫苗成为可能; 另外他还解析了靶向NTD (N-terminal domain)的中和抗体复合物的晶体结构；最近成功解析了第一个2019-nCoV S蛋白结构等。</p>
+            </div>
+          </div>
+
+          <!--Speaker Photo-->
+          <div class="col-md-9 col-lg-6 col-xl-5">
+            <img src="assets/img/webinar/Nianshuang%20Wang%20Headshot.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            SPONSOR
+    ------------------------------------------------------------------------------------------------------------------>
+
+    <section class="o-hidden pt-0">
+      <div class="container">
+        <div class="row align-items-center justify-content-around text-center text-lg-left">
+          <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2 pl-lg-5 pl-xl-0">
+
+            <!--Sponsor-->
+            <div>
+              <h2 class="h1">Sponsor</h2>
+              <p class="lead">恺佧生物（Kactus Biosystems）是一家以创新为驱动的重组蛋白研发公司，借助于我们独有的结构生物学建模设计和体外高通量筛选体系，提供困难蛋白CRO服务以及高品质目录产品，解决抗体药研发在抗原蛋白上未被满足的需求。 恺佧生物致力于解决如下问题：市面上缺少跨膜蛋白的可溶性抗原；抗原不能引起有效的免疫反应；抗原细胞功能实验上显示活性低或无活性；现有的蛋白质服务项目方法单一，成功率低，时间长。 恺佧生物的特色服务包括: ImmunoProTM VLP 超级抗原突出重要表位的展示，增强免疫应答；MembraneXTM 基于结构设计的跨膜蛋白；UltraActiveTM 卓越细胞活性的多聚体蛋白；MamMHCTM 哺乳表达，超低内毒的天然构象MHC多肽复合物。恺佧生物立足于结构设计和高通量筛选平台，解决在抗原蛋白上未被满足的需求.</p>
+            </div>
+            <button class="btn btn-primary flex-shrink-0" onclick="window.location.href = 'https://www.crunchbase.com/organization/kactus-biosystems';" >Visit sponsor site</button>
+
+          </div>
+
+          <!--Abstract Photo-->
+          <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+            <img src="assets/img/webinar/kactus.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            REGISTRATION
+    ------------------------------------------------------------------------------------------------------------------>
+      <div class="container">
+        <div class="row section-title justify-content-center text-center">
+          <div class="col-md-9 col-lg-8 col-xl-7">
+            <h3 class="display-4">Register Now</h3>
+            <div class="lead">
+              Registration is only open to CAS members. <br>
+              Not a member? <a href="https://chineseantibody.org/membership-register/">Join Today </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                    PAST WEBINAR DATA TABLE
+    ------------------------------------------------------------------------------------------------------------------>
+    <!-- Table -->
+    <div>
+      <h1 class="display-4" align="center">Past Webinars</h1>
+      <p align="center" style="font-size: 20px">Replay past webinar. Try searching key words such as "discovery", "bispecific", "patent" </p>
+    </div>
+    <div class="table-wrapper" style="padding: 60px;">
+      <table id="webinar" class="hover" style="width:100%; color: #2e3141">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Date</th>
+          <th>Topics</th>
+          <th>Webinar Title</th>
+          <th>Speaker</th>
+          <th>Speaker Title</th>
+          <th>Speaker Affiliation</th>
+          <th>Replay</th>
+          <th>Synopsis</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+          <th></th>
+          <th>Date</th>
+          <th>Topics</th>
+          <th>Webinar Title</th>
+          <th>Speaker</th>
+          <th>Speaker Title</th>
+          <th>Speaker Affiliation</th>
+          <th>Replay</th>
+          <th>Synopsis</th>
+        </tr>
+        </tfoot>
+
+      </table>
+
+    </div>
+
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            BACK TO TOP BUTTON
+    ------------------------------------------------------------------------------------------------------------------>
+
+    <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <!--LOCAL PATH: <img src="assets/img/icons/interface/icon-arrow-up-white.svg"> -->
+      <img src="https://res.cloudinary.com/dwawcx2hl/image/upload/v1589932255/assets/icons/icon-arrow-up-white_jpxpks.svg">
+    </a>
+
+    <!-----------------------------------------------------------------------------------------------------------------
+                                                            FOOTER
+    ------------------------------------------------------------------------------------------------------------------>
+
+    <footer class="bg-primary-3 text-white links-white pb-4 footer-1"></footer>
+
+
+
+    <!-- Required vendor scripts (Do not remove) -->
+    <!-- LOCAL PATH: <script type="text/javascript" src="assets/js/popper.min.js"></script> -->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932059/assets/js/popper.min_dxoce2.js"></script>
+
+    <!-- LOCAL PATH: <script type="text/javascript" src="assets/js/bootstrap.js"></script> -->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932153/assets/js/bootstrap_znejv9.js"></script>
+
+    <!-- REQUIRED for Header Animation: AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <!--LOCAL PATH: <script type="text/javascript" src="assets/js/aos.js"></script>-->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932371/assets/js/aos_arsj5l.js"></script>
+
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <!-- LOCAL PATH: <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script> -->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932436/assets/js/jquery.countdown.min_bgavfj.js"></script>
+
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <!-- LOCAL PATH: <script type="text/javascript" src="assets/js/scrollMonitor.js"></script> -->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932498/assets/js/scrollMonitor_z0kwj2.js"></script>
+
+    <!--Script for webinar datatable -->
+    <!-- LOCAL PATH: <script src="assets/js/webinar_v2.js"></script> -->
+    <script src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932587/assets/js/webinar_v2_qqeucq.js"></script>
+
+    <!-- Required theme scripts (Do not remove) -->
+    <!-- LOCAL PAHT: <script type="text/javascript" src="assets/js/theme.js"></script> -->
+    <script type="text/javascript" src="https://res.cloudinary.com/dwawcx2hl/raw/upload/v1589932705/assets/js/theme_a472tf.js"></script>
+
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load",function(){document.querySelector('body').classList.add('loaded');});
+    </script>
+
+  </body>
+
+</html>
