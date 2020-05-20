@@ -26,5 +26,5 @@ Resources and templates I made for Chinese Antibody Society (CAS)
  - Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
-      
+         
       
