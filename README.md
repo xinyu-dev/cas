@@ -9,17 +9,17 @@ Resources and templates I made for Chinese Antibody Society (CAS)
 
 ## HTML, Javscript, CSS
 
-### Email newsletter for journal new article alert
+### 1. Email newsletter for journal new article alert
 
  - Code : `New Article Alert.html`
  - [Demo](https://xinyu-dev.github.io/cas/New%20Article%20Alert.html)
 
-### CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
+### 2. CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
 
  - Code : `CAS Program Book.html`
  - [Demo](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
-### Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
+### 3. Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
  - Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v1.html)
 
