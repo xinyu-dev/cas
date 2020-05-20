@@ -10,4 +10,12 @@ Resources and templates I made for Chinese Antibody Society
 
 2. [CAS Program Book, embedded in Adobe InDesign](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
-3. [Interactive Webinar Database](https://xinyu-dev.github.io/cas/webinar_v2.html)
+3. Interactive Webinar Database
+   
+   - Open-source script for the data table only: 
+      [Table Only](https://xinyu-dev.github.io/cas/webinar_v2.html)
+      
+   - Data table in a fully themed webpage: 
+      [Table in a themed page](https://xinyu-dev.github.io/cas/webinar-page-hosted.html)
+      
+      
