@@ -14,16 +14,16 @@ Resources and templates I made for Chinese Antibody Society (CAS)
  - Code : `New Article Alert.html`
  - [Demo](https://xinyu-dev.github.io/cas/New%20Article%20Alert.html)
 
-2. [CAS Program Book, embedded in Adobe InDesign](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
+2. CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
 
  - Code : `CAS Program Book.html`
- - [Demo](https://xinyu-dev.github.io/cas/New%20Article%20Alert.html)
+ - [Demo](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
 3. Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
-- Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
+ - Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v1.html)
 
-- Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
+  - Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
       
