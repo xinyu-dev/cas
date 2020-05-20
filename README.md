@@ -23,7 +23,7 @@ Resources and templates I made for Chinese Antibody Society (CAS)
  - Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v1.html)
 
-  - Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
+ - Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
       
