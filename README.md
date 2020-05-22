@@ -1,4 +1,4 @@
-# My Volunteer Projects at Chinese Antibody Society (CAS)
+# My Volunteer Projects at the Chinese Antibody Society
 Resources and templates made for CAS
 
 # AWS S3 Hosted Playground, Distributed through CloudFront
