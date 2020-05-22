@@ -3,7 +3,11 @@ Resources and templates I made for Chinese Antibody Society (CAS)
 
 # AWS S3 Hosted Playground 
 
-[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/)
+[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website filed hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
+
+# AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
+
+Setup a cloud computation environemnt in AWS EC2 for hosting python scripts. Notebook can be [accessed here](https://ec2-18-217-92-114.us-east-2.compute.amazonaws.com:8888/tree/MyNotebooks/). *To access the link, you need to be authorized by CAS*.
 
 # Collection of Scripts and Templates (2020)
 
