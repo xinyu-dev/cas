@@ -7,7 +7,7 @@ Resources and templates made for CAS
 
 # AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
 
-This is a cloud computation environemnt in AWS EC2 for hosting python scripts. Notebook can be [accessed here](https://ec2-18-217-92-114.us-east-2.compute.amazonaws.com:8888/tree/MyNotebooks/). *To access the link, you need to be authorized by CAS*.
+This is a cloud computation environemnt in AWS EC2 for hosting python scripts. Notebook can be [accessed here](https://ec2-18-217-92-114.us-east-2.compute.amazonaws.com:8888/tree/MyNotebooks/). *To access the link, you need to be authorized by the opertional team of the Chinese Antibody Society*.
 
 # Collection of Scripts and Templates (2020)
 
