@@ -3,7 +3,7 @@ Resources and templates I made for Chinese Antibody Society (CAS)
 
 # AWS S3 Hosted Playground 
 
-[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website filed hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
+[This website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website files hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
 
 # AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
 
