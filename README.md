@@ -3,11 +3,11 @@ Resources and templates made for CAS
 
 # AWS S3 Hosted Playground, Distributed through CloudFront
 
-[This playground website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website files hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
+Created [this playground website](http://chineseantibody-dev.org/) on AWS S3 is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website files hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
 
 # AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
 
-This is a cloud computation environemnt in AWS EC2 for hosting python scripts. Notebook can be [accessed here](https://ec2-18-217-92-114.us-east-2.compute.amazonaws.com:8888/tree/MyNotebooks/). *To access the link, you need to be authorized by the opertional team of the Chinese Antibody Society*.
+Created this cloud computation environemnt in AWS EC2 for hosting python scripts. Notebook can be [accessed here](https://ec2-18-217-92-114.us-east-2.compute.amazonaws.com:8888/tree/MyNotebooks/). *To access the link, you need to be authorized by the opertional team of the Chinese Antibody Society*.
 
 # Collection of Scripts and Templates (2020)
 
@@ -17,6 +17,11 @@ This is a cloud computation environemnt in AWS EC2 for hosting python scripts. N
 
  - Code : `New Article Alert.html`
  - [Demo](https://xinyu-dev.github.io/cas/New%20Article%20Alert.html)
+ 
+### 2. Email newsletter for journal announcements
+
+ - Code : `News and Announcement.html`
+ - [Demo](https://xinyu-dev.github.io/cas/News%20and%20Announcement.html)
 
 ### 2. CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
 
