@@ -11,6 +11,13 @@ Created this cloud computation environemnt in AWS EC2 for hosting python scripts
 
 # Collection of Scripts and Templates (2020)
 
+## Python - Image Processing (All scripts hosting on CAS's AWS EC2 cloud)
+
+### 1. Logo Resizer (code in separate [repo](https://github.com/xinyu-dev/general-image-processing))
+
+Batch-transform sponsor logos to uniform dimensions without shape distortion.
+
+
 ## HTML, Javscript, CSS
 
 ### 1. Email newsletter for journal new article alert
