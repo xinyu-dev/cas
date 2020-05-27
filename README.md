@@ -1,5 +1,5 @@
 # My Volunteer Projects at the Chinese Antibody Society
-Resources and templates made for CAS
+Resources and templates I made for CAS
 
 # AWS S3 Hosted Playground, Distributed through CloudFront
 
@@ -35,5 +35,8 @@ Created this cloud computation environemnt in AWS EC2 for hosting python scripts
  - Version 2: Responsive to screen size. Automatically hide whatever number of rows needed. 
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
-         
+
+### 4. Filterable Sortable, and Searchable Video-Embedded Webinar Database
+  Modified javascript & HTML based on isotype.js and booststrap to enable embedding of video iframes in Boostrap cards. These cards be be filtered, sorted, and searched by text. 
+  - [Demo](https://s3.us-east-2.amazonaws.com/chineseantibody-dev.org/webinar-past.html) 
       
