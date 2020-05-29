@@ -43,17 +43,6 @@ campStats={
     'ind_unsub_rate':[]
 }
 ```
-2. Using CloudFlare API to retreive stats on CAS's current website. The script retrieves the following data fields"
-```python
-webStats={
-    'date_time':[],
-    'requests_all':[],
-    'requests_country':[],
-    'threats_all':[],
-    'pageviews_all':[],
-    'unique_visitors':[]
-}
-```
 
 ### 2. Using CloudFlare API to retrieves stats on website traffic
 
