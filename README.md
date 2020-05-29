@@ -76,12 +76,12 @@ The data retrieved from the APIs using the scripts above can be consumed directl
  - Code : `News and Announcement.html`
  - [Demo](https://xinyu-dev.github.io/cas/News%20and%20Announcement.html)
 
-### 2. CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
+### 3. CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
 
  - Code : `CAS Program Book.html`
  - [Demo](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
-### 3. Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
+### 4. Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
  - Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v1.html)
 
@@ -89,7 +89,7 @@ The data retrieved from the APIs using the scripts above can be consumed directl
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
 
-### 4. Filterable Sortable, and Searchable Video-Embedded Webinar Database
+### 5. Filterable Sortable, and Searchable Video-Embedded Webinar Database
   Modified javascript & HTML based on isotype.js and booststrap to enable embedding of video iframes in Boostrap cards. These cards be be filtered, sorted, and searched by text. 
   - [Demo](https://s3.us-east-2.amazonaws.com/chineseantibody-dev.org/webinar-past.html) 
       
