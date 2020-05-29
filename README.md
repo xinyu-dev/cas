@@ -17,6 +17,63 @@ Created this cloud computation environemnt in AWS EC2 for hosting python scripts
 
 Batch-transform sponsor logos to uniform dimensions without shape distortion.
 
+## Python - Retrieving data from APIs 
+
+*Note: you need to be authorized by the Chinese Antibody Society to receive API tokens*.  
+
+### 1. Using MailChimp API to retrieve stats on email campaigns
+
+The script retrieves these data fields: 
+
+```python
+campStats={
+    'article_type':[],
+    'send_time':[],
+    'list_name':[],
+    'subject_line':[],
+    'emails_sent':[],
+    'bounces':[],
+    'unsubscribed':[],
+    'open_total':[],
+    'unique_opens':[],
+    'clicks_total':[],
+    'unique_clicks':[],
+    'ind_open_rate':[],
+    'ind_click_rate':[],
+    'ind_unsub_rate':[]
+}
+```
+2. Using CloudFlare API to retreive stats on CAS's current website. The script retrieves the following data fields"
+```python
+webStats={
+    'date_time':[],
+    'requests_all':[],
+    'requests_country':[],
+    'threats_all':[],
+    'pageviews_all':[],
+    'unique_visitors':[]
+}
+```
+
+### 2. Using CloudFlare API to retrieves stats on website traffic
+
+The script retrieves these data fields: 
+
+```python
+webStats={
+    'date_time':[],
+    'requests_all':[],
+    'requests_country':[],
+    'threats_all':[],
+    'pageviews_all':[],
+    'unique_visitors':[]
+}
+```
+
+## Python - Analytics Dashboard
+
+The data retrieved from the APIs using the scripts above can be consumed directly by a Dash/Plotly app that I built. The analytics app is currently hosted on Heroku. 
+
 
 ## HTML, Javscript, CSS
 
