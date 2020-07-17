@@ -71,17 +71,17 @@ The data retrieved from the APIs using the scripts above can be consumed directl
 
 ## 5.1 Email newsletter for journal new article alert
 
- - Code : `New Article Alert.html`
+ - Code : `Newsletters/New Article Alert.html`
  - [Demo](https://xinyu-dev.github.io/cas/New%20Article%20Alert.html)
  
 ## 5.2 Email newsletter for journal announcements
 
- - Code : `News and Announcement.html`
+ - Code : `Newsletters/News and Announcement.html`
  - [Demo](https://xinyu-dev.github.io/cas/News%20and%20Announcement.html)
 
 ## 5.3 CAS Program Book, embedded in Adobe InDesign (original artworks made in Adobe InDesign)
 
- - Code : `CAS Program Book.html`
+ - Code : `Program_Book/CAS Program Book.html`
  - [Demo](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
 
 ## 5.4 Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
