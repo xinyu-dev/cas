@@ -67,7 +67,7 @@ webStats={
 The data retrieved from the APIs using the scripts above can be consumed directly by a Dash/Plotly app that I built. The analytics app is deployed to Elastic Beanstalk. 
 
 
-# 5. HTML - templates for newsletters
+# 5. HTML - newsletters, program book
 
 ## 5.1 Email newsletter for journal new article alert
 
@@ -83,8 +83,11 @@ The data retrieved from the APIs using the scripts above can be consumed directl
 
  - Code : `Program_Book/CAS Program Book.html`
  - [Demo](https://xinyu-dev.github.io/cas//CAS%20Program%20Book.html)
+ 
+ 
+# 6. HTML, CSS, Javascript - Interactive Data Tables
 
-## 5.4 Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
+## 6.1 Interactive Webinar Database (code in a seprate [repo](https://github.com/xinyu-dev/interactive-datatable))
  - Version 1: Expandable dropdown menu for each row to hide certain user-defined columns.
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v1.html)
 
@@ -92,7 +95,7 @@ The data retrieved from the APIs using the scripts above can be consumed directl
    - [Table Only Demo](https://xinyu-dev.github.io/interactive-datatable/webinar_v2.html) 
    - [Table in a themed page](http://chineseantibody-dev.org/webinar-test.html)
 
-## 5.5 Filterable Sortable, and Searchable Video-Embedded Webinar Database
+## 6.2 Filterable Sortable, and Searchable Video-Embedded Webinar Database
   Modified javascript & HTML based on isotype.js and booststrap to enable embedding of video iframes in Boostrap cards. These cards be be filtered, sorted, and searched by text. 
   - [Demo](https://s3.us-east-2.amazonaws.com/chineseantibody-dev.org/webinar-past.html) 
       
