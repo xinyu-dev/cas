@@ -11,7 +11,7 @@ Created this cloud computation environemnt in AWS EC2 for hosting python scripts
 
 # Django Application (Volunteer Hub) Deployed on Elastic Beanstalk
 
-Created a Django application [the volunteer hub](https://hub.chineseantibody-dev.org). 
+Created a Django application for the [CAS volunteer hub](https://hub.chineseantibody-dev.org). Deployed on Elastic Beanstalk
 
 
 # Collection of Scripts and Templates (2020)
