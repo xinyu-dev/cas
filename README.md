@@ -18,7 +18,7 @@ Created a Django application for the [CAS volunteer hub](https://hub.chineseanti
 
 # 2. Python - Image Processing (All scripts hosting on CAS's AWS EC2 cloud)
 
-### 1. Logo Resizer (code in separate [repo](https://github.com/xinyu-dev/general-image-processing))
+### 2.1 Logo Resizer (code in separate [repo](https://github.com/xinyu-dev/general-image-processing))
 
 Batch-transform sponsor logos to uniform dimensions without shape distortion.
 
