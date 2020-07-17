@@ -7,11 +7,11 @@ Resources and templates I made for CAS
 
 Created [this playground website](http://chineseantibody-dev.org/) on AWS S3. It is a collection of static webpages currently under development for a future version of [the society's website](https://chineseantibody.org/). Domain name was purchased through AWS Route 53, website files hosted on AWS S3, SSL certificate obtainted through AWS Certificate Manager, and website distributed through AWS CloudFront
 
-# 1.2 AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
+## 1.2 AWS EC2 IPython (Jupyter Notebook) Cloud Computation Environment
 
 Created jupyter notebook instance on AWS EC2 for hosting python scripts.
 
-# 1.3 Django Application (Volunteer Hub) Deployed on Elastic Beanstalk
+## 1.3 Django Application (Volunteer Hub) Deployed on Elastic Beanstalk
 
 Created a Django application for the [CAS volunteer hub](https://hub.chineseantibody-dev.org). The application is deployed on Elastic Beanstalk
 
