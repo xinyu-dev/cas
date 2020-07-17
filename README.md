@@ -62,9 +62,11 @@ webStats={
 }
 ```
 
-# 4. Python - Dash Analytics Dashboard
+# 4. Python - Dash Analytics Dashboard (code in separate [repo](https://github.com/xinyu-dev/cas-analytics-dashboard))
 
 The data retrieved from the APIs using the scripts above can be consumed directly by a Dash/Plotly app that I built. The analytics app is deployed to Elastic Beanstalk. 
+
+![screenshot](https://github.com/xinyu-dev/cas-analytics-dashboard/blob/master/screenshots/wechat_1.png?raw=True)
 
 
 # 5. HTML - newsletters, program book
